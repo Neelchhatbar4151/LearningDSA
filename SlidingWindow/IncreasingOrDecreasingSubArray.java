@@ -3,7 +3,7 @@ public class IncreasingOrDecreasingSubArray {
         System.out.println(Helper(new int[]{1,4,3,3,2}));
     }
     public static int Helper(int[] nums){
-        int maxCounter = 0, counter = 0,i = 0, j = 1;
+        int maxCounter = 0, i = 0, j = 1;
         while(i < nums.length){
             // System.out.println("I: " + i);
             while(j < nums.length && nums[j] > nums[j-1]){
